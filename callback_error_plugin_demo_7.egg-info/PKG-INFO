@@ -1,3 +1,16 @@
+Metadata-Version: 2.4
+Name: callback_error_plugin_demo_7
+Version: 0.0.1
+Summary: A plugin to print Dash app errors on the header section of the page
+Home-page: https://github.com/banana0000/Hook-test
+Author: koveszter
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: dash>=3.0.3
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
 # Dash Error Plugin Demo
 
 A Dash plugin to display callback errors in your Dash app.
