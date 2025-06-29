@@ -1,0 +1,7 @@
+pyproject.toml
+callback_error_plugin/__init__.py
+callback_error_plugin.egg-info/PKG-INFO
+callback_error_plugin.egg-info/SOURCES.txt
+callback_error_plugin.egg-info/dependency_links.txt
+callback_error_plugin.egg-info/requires.txt
+callback_error_plugin.egg-info/top_level.txt

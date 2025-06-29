@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "callback_error_plugin-demo4"
+version = "0.0.1"
+dependencies = [
+    "dash>=3.0.3",
+]
+[tool.setuptools]
+packages = ["callback_error_plugin"]
