@@ -1,5 +1,5 @@
 Metadata-Version: 2.4
-Name: callback_error_plugin_demo_7
+Name: callback_error_plugin_demo_8
 Version: 0.0.1
 Summary: A plugin to print Dash app errors on the header section of the page
 Home-page: https://github.com/banana0000/Hook-test
@@ -18,7 +18,7 @@ A Dash plugin to display callback errors in your Dash app.
 ## Installation
 
 ```bash
-pip install callback-error-plugin_demo_7
+pip install callback-error-plugin_demo_8
 ```
 
 ## Usage
@@ -27,24 +27,25 @@ pip install callback-error-plugin_demo_7
 from dash import Dash, dcc, html, callback, Input, Output, State
 import callback_error_plugin_demo_7
 
-add_error_notifications("Error message")
+# Add the error notification system to your app
+callback_error_plugin_demo_7.add_error_notifications("Error message")
 
 app = Dash(__name__)
 
 app.layout = html.Div(
     [
         html.H2("Division Calculator"),
-        generate_error_notification(),
+        # The error notification banner will be automatically added by the plugin
         html.Label("Enter a number:", htmlFor="input-number"),
         dcc.Input(id="input-number", type="number", value=1),
-        html.Button("Calculate", id="calc-btn", nClicks=0),
+        html.Button("Calculate", id="calc-btn", n_clicks=0),
         html.Div(id="output-div"),
     ]
 )
 
 @callback(
     Output("output-div", "children"),
-    Input("calc-btn", "nClicks"),
+    Input("calc-btn", "n_clicks"),
     State("input-number", "value"),
 )
 def update_output(n_clicks, value):
@@ -54,7 +55,8 @@ def update_output(n_clicks, value):
         result = 10 / value
         return f"The result is {result}"
     except Exception as e:
-        return f"Error: {e}"
+        # The error banner will display the error automatically
+        return ""
 
 if __name__ == "__main__":
     app.run(debug=True)
@@ -65,3 +67,13 @@ if __name__ == "__main__":
 ```bash
 python example.py
 ```
+
+## Notes
+
+- The error banner will automatically appear at the top of your app when a callback error occurs.
+- You can customize the error message by changing the argument to `add_error_notifications`.
+- The plugin handles showing and hiding the error banner for you.
+
+---
+
+**Enjoy building with Dash!**

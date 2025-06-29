@@ -1,2 +1,0 @@
-[dash_hooks]
-callback_error_plugin_demo_7 = callback_error_plugin_demo_7

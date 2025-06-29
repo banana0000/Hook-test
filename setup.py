@@ -10,8 +10,8 @@ setup(
         "dash>=3.0.3",
     ],
     python_requires=">=3.8",
-    entry_points={"dash_hooks": ["callback_error_plugin_demo_7 = callback_error_plugin_demo_7"]},
-    packages=["callback_error_plugin_demo_7"],
+    entry_points={"dash_hooks": ["callback_error_plugin_demo_8 = callback_error_plugin_demo_8"]},
+    packages=["callback_error_plugin_demo_8"],
     author="koveszter",
     description="A plugin to print Dash app errors on the header section of the page",
     long_description=long_description,  # Now this is the actual README content

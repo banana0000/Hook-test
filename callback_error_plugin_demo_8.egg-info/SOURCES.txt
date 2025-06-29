@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+callback_error_plugin_demo_8/__init__.py
+callback_error_plugin_demo_8.egg-info/PKG-INFO
+callback_error_plugin_demo_8.egg-info/SOURCES.txt
+callback_error_plugin_demo_8.egg-info/dependency_links.txt
+callback_error_plugin_demo_8.egg-info/entry_points.txt
+callback_error_plugin_demo_8.egg-info/requires.txt
+callback_error_plugin_demo_8.egg-info/top_level.txt
